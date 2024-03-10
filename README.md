@@ -1,6 +1,6 @@
 # 4x4-Checkers-with-AI
 
-This program was part of the course Hardware-Oriented Computing in which the task was to create a 4x4 checkers game using the console for a UI.
+Built in QT Creator, this program was part of the course Hardware-Oriented Computing in which the task was to create a 4x4 checkers game using the console for a UI.
 
 The assignment was very succesful, using three classes to hold the game state, position and potential moves.
 
