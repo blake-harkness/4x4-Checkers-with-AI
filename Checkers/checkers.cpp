@@ -1,4 +1,4 @@
-#include <checkers.h>
+#include "checkers.h"
 #include <iostream>
 #include <algorithm>
 // Name: Blake Harkness
@@ -166,12 +166,12 @@
 
     int game_state::get_ai(void){ //works out what AI the players wants to go against (Or player vs player)
 
-        char aichar =  'k'; // generic initilising
-        std::cin >> aichar;
-        aichar = aichar - 48; // conversion to 1 2 or 3
-        if(aichar != 1 && aichar != 2 && aichar !=3) {
+        char input = '0';
+        std::cin >> input;
+        int aichar = input - '0'; // convert from ASCII digit to integer
+        if(aichar != 1 && aichar != 2 && aichar != 3) {
             std::cout << "Invalid AI type, please enter 1 for Beginner, 2 for Advanced" << std::endl;
-            get_ai();
+            return get_ai();
         }
 
         std::cout << std::endl << "Perfect! You are now playing ";
