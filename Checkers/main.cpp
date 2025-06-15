@@ -1,13 +1,13 @@
 #include <iostream>
-#include <checkers.h>
-#include <checkers.cpp>
+#include "checkers.h"
+
 int main()
 {
 
     game_state game;
     game.display();
 
-   class move b;
+    move b;
     while (game.is_game_over() != 1){
 
         if(game.is_red_turn() && game.ai != 3) {
